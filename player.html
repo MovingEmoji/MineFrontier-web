@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>MineFrontier 公式サイト / プレイヤーデータ</title>
+<link href="resouces/style.css" rel="stylesheet" type="text/css">
+<meta name="description" content="MineFrontier Netowork/RPGの公式webサイトです。 様々な最新情報をお届けしています。">
+<link rel="icon" href="resouces/tab-icon.png">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+	var MenuToggle = false;
+	function OpenMenu() {
+		if(MenuToggle != false) {
+			MenuToggle = false;
+			$('.Selectors').css({'display' : ''});
+		} else {
+			MenuToggle = true;
+			$('.Selectors').css({'display' : 'flex'});
+		}
+	}
+    function search() {
+        event.preventDefault()
+        location.href = 'https://www.mcmf.cc/player/' + $("input[name='textbox']").val()
+    }
+</script>
+</head>
+<body>
+	<div class="Discord">
+		<a href="https://www.youtube.com/channel/UChcQ82lziNMfWw_U3m_pRhg"><img src="resouces/yt_icon_rgb.png"></a>
+		<a href="https://twitter.com/MC_MineFrontier"><img src="resouces/twitter_icon-icons.com_62751.png"></a>
+		<a href="https://discord.gg/3SqQabhcqB"><img src="resouces/original.png"></a>
+	</div>
+    <div class="Header-Background">
+		<a href="/">
+            <div class="Header-Icon">
+                <div class="Icon">
+                    <img class="image" src="resouces/icon.png">
+                    <h1>MineFrontier</h1>
+                    <h2>RPG</h2>
+                </div>
+            </div>
+        </a>
+		<div class="OpenButton">
+			<button class="selectorbutton" onClick="OpenMenu()">≡</button>
+		</div>
+		<div class="Selectors">
+			<div class="Buttons">
+				<a href="/">ホーム</a>
+				<a href="news">ニュース</a>
+				<a href="">プレイヤーデータ</a>
+				<a href="staff">スタッフ</a>
+				<a href="https://docs.google.com/forms/d/10EueTsETDEkGLbxXVppCC1K994nSjPvfFa7uG4z9SOA/edit">採用情報</a>
+			</div>
+		</div>
+	</div>
+    <div class="News-Title">
+        <h1>Players</h1>
+    </div>
+    <img class="News-Back" src="resouces/player-background.png">
+    <div class="Main-Contents">
+        <h1>Players</h1>
+        <h2>プレイヤーデータ</h2>
+    </div>
+    <div class="Title">
+		<h1>プレイヤーを検索</h1>
+	</div>
+    <div class="Search-Base">
+        <form onsubmit="search()">
+            <input class="box" type="text" name="textbox">
+            <input class="submit" type="submit" value="検索">
+        </form>
+    </div>
+</body>
+</html>

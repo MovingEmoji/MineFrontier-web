@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>MineFrontier 公式サイト / {{ mcid }}</title>
+<link href="https://www.mcmf.cc/resouces/style.css" rel="stylesheet" type="text/css">
+<meta name="description" content="{{ mcid }}のステータス情報です。">
+<link rel="icon" href="https://www.mcmf.cc/resouces/tab-icon.png">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+	var MenuToggle = false;
+	function OpenMenu() {
+		if(MenuToggle != false) {
+			MenuToggle = false;
+			$('.Selectors').css({'display' : ''});
+		} else {
+			MenuToggle = true;
+			$('.Selectors').css({'display' : 'flex'});
+		}
+	}
+</script>
+</head>
+<body>
+    <div class="Player-BackGround">
+        <img src="https://www.mcmf.cc/resouces/playerdata-back.png">
+    </div>
+	<div class="Discord">
+		<a href="https://www.youtube.com/channel/UChcQ82lziNMfWw_U3m_pRhg"><img src="https://www.mcmf.cc/resouces/yt_icon_rgb.png"></a>
+		<a href="https://twitter.com/MC_MineFrontier"><img src="https://www.mcmf.cc/resouces/twitter_icon-icons.com_62751.png"></a>
+		<a href="https://discord.gg/3SqQabhcqB"><img src="https://www.mcmf.cc/resouces/original.png"></a>
+	</div>
+    <div Class="Main">
+        <div class="Header-Background" style="position: relative;">
+            <a href="/">
+                <div class="Header-Icon">
+                    <div class="Icon">
+                        <img class="image" src="https://www.mcmf.cc/resouces/icon.png">
+                        <h1>MineFrontier</h1>
+                        <h2>RPG</h2>
+                    </div>
+                </div>
+            </a>
+            <div class="OpenButton">
+                <button class="selectorbutton" onClick="OpenMenu()">≡</button>
+            </div>
+            <div class="Selectors">
+                <div class="Buttons">
+                    <a href="/">ホーム</a>
+                    <a href="/news">ニュース</a>
+                    <a href="/player">プレイヤーデータ</a>
+                    <a href="/staff">スタッフ</a>
+                    <a href="https://docs.google.com/forms/d/10EueTsETDEkGLbxXVppCC1K994nSjPvfFa7uG4z9SOA/edit">採用情報</a>
+                </div>
+            </div>
+        </div>
+        <div class="Player-BackBase">
+            <div class="Title">
+                <h1 style="color: #FFFFFF; border-color: #FFFFFF;">プレイヤーデータ</h1>
+            </div>
+            <div class="Player-Info">
+                <img src="https://crafatar.com/renders/body/{{ id }}">
+                <div class="Player-Name">
+                    <h1>{{ mcid }}</h1>
+                    <h2>{{ id }}</h2>
+                    <h3>現在の職業: {{ job }}</h3>
+                    <h3>レベル: {{ levelweb }}</h3>
+                </div>
+            </div>
+            <div class="Jobs">
+                <div class="Job-Base">
+                    <h1>詳細情報</h1>
+                    <h2>EXP: {{ xpweb }}</h2>
+                    <h2>HP: {{ hpweb }} </h2>
+                    <h2>MP: {{ mpweb }}</h2>
+                    <h2>攻撃力: {{ meeleweb }}</h2>
+                    <h2>防御力: {{ protectionweb }}</h2>
+                    <h2>魔力: {{ magicweb }}</h2>
+                </div>
+            </div>
+            <div class="Attention">
+                <h1>この情報はMineFrontier内でのみ使用されるものです。すべてのプレイヤーがこれらの情報を閲覧できます。</h1>
+                <h1>Created by mcmfAPI</h1>
+            </div>
+        </div>
+        <div class="Footer">
+            <h1>ここでしかない世界でここにしかない冒険を</h1>
+            <h2>MineFrontier Network / RPG</h2>
+            <h3>2020-2021 MineFrontier Network.</h3>
+        </div>
+    </div>
+</body>

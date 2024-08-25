@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>MineFrontier 公式サイト / ホーム</title>
+<link href="resouces/style.css" rel="stylesheet" type="text/css">
+<meta name="description" content="MineFrontier Netowork/RPGの公式webサイトです。 様々な最新情報をお届けしています。">
+<link rel="icon" href="resouces/tab-icon.png">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+	var MenuToggle = false;
+	function OpenMenu() {
+		if(MenuToggle != false) {
+			MenuToggle = false;
+			$('.Selectors').css({'display' : ''});
+		} else {
+			MenuToggle = true;
+			$('.Selectors').css({'display' : 'flex'});
+		}
+	}
+	$(function() {
+		var setImg = '#photo';
+		var fadeSpeed = 1600;
+		var switchDelay = 5000;
+		
+		$(setImg).children('img').css({opacity:'0'});
+		$(setImg + ' img:first').stop().animate({opacity:'1'},fadeSpeed);
+		setInterval(function(){
+			$(setImg + ' :first-child').animate({opacity:'0'},fadeSpeed).next('img').animate({opacity:'1'},fadeSpeed).end().appendTo(setImg);
+		},switchDelay);
+	});
+</script>
+</head>
+
+<body>
+	<div class="Discord">
+		<a href="https://www.youtube.com/channel/UChcQ82lziNMfWw_U3m_pRhg"><img src="resouces/yt_icon_rgb.png"></a>
+		<a href="https://twitter.com/MC_MineFrontier"><img src="resouces/twitter_icon-icons.com_62751.png"></a>
+		<a href="https://discord.gg/3SqQabhcqB"><img src="resouces/original.png"></a>
+	</div>
+	<div class="Header-Background">
+		<a href="/">
+            <div class="Header-Icon">
+                <div class="Icon">
+                    <img class="image" src="resouces/icon.png">
+                    <h1>MineFrontier</h1>
+                    <h2>RPG</h2>
+                </div>
+            </div>
+        </a>
+		<div class="OpenButton">
+			<button class="selectorbutton" onClick="OpenMenu()">≡</button>
+		</div>
+		<div class="Selectors">
+			<div class="Buttons">
+				<a href="/">ホーム</a>
+				<a href="news">ニュース</a>
+				<a href="player">プレイヤーデータ</a>
+				<a href="staff">スタッフ</a>
+				<a href="https://docs.google.com/forms/d/10EueTsETDEkGLbxXVppCC1K994nSjPvfFa7uG4z9SOA/edit">採用情報</a>
+			</div>
+		</div>
+	</div>
+	<div class="MainImage">
+		<div class="Catch-Copy">
+			<div class="Text-Box">
+				<h1>～ここにしかない世界で、ここにしかない冒険を～</h1>
+				<h1>運営募集中</h1>
+			</div>
+		</div>
+		<div id="photo">
+		 	<img src="resouces/background-1.png">
+			<img src="resouces/background-2.png">
+			<img src="resouces/background-3.png">
+			<img src="resouces/background-4.png">
+			<img src="resouces/background-5.png">
+			<img src="resouces/background-6.png">
+		</div>
+	</div>
+	<div class="Main-Contents">
+	  	<h1>EVENT & TOPIC</h1>
+		<h2>イベント&トピック</h2>
+	</div>
+	<div class="Contents-Base">
+  		<div class="Contents-Box">
+		  	<div class="Topics">
+				<div class="Topic">
+					<a href="news/3">
+						<div class="Topic-Box">
+							<img src="resouces/news-serverinfo2.png">
+							<h1 style="color: #000000">サーバー紹介②</h1>
+							<h1>職業システムについて紹介</h1>
+						</div>
+					</a>
+				</div>
+				<div class="Topic">
+					<a href="news/2">
+						<div class="Topic-Box">
+							<img src="resouces/news-serverinfo.png">
+							<h1 style="color: #000000">サーバー紹介①</h1>
+							<h1>スキルシステムについて紹介</h1>
+						</div>
+					</a>
+				</div>
+				<div class="Topic">
+					<a href="news/1">
+						<div class="Topic-Box">
+							<img src="resouces/topic1.png">
+							<h1 style="color: #000000">βテストについて</h1>
+							<h1>詳細はこちら</h1>
+						</div>
+					</a>
+				</div>
+				<div class="Topic">
+					<a href="https://docs.google.com/forms/d/10EueTsETDEkGLbxXVppCC1K994nSjPvfFa7uG4z9SOA/edit">
+						<div class="Topic-Box">
+							<img src="resouces/topic2.png">
+							<h1 style="color: #000000">運営募集について</h1>
+							<h1>一緒にサーバーを発展させましょう！</h1>
+						</div>
+					</a>
+				</div>
+			</div>
+  		</div>
+	</div>
+  	<div class="Other-Topics">
+		<a href="">その他のイベントなど</a>
+	</div>
+	<div style="background-color: #EFEFEF">
+		<div style="background-color: #EFEFEF" class="Contents-Base">
+			<div class="Contents-Box">
+				<div class="Indexes">
+					<h2>MineFrontierとは</h2>
+					<h1>OwnerのSyaRaが ”どこよりもすごいRPG鯖” という目標と共に立ち上げた</h1>
+					<h1>MMORPGサーバー制作プロジェクトです</h1>
+					<h2>ストーリー</h2>
+					<h1>公開までのお楽しみ...</h1>
+				</div>
+			</div>
+		</div>
+		<div class="Other-Topics">
+			<a href="rule" style="border: none;">サーバー利用規約</a>
+		</div>
+	</div>
+	<div class="Footer">
+		<h1>ここでしかない世界でここにしかない冒険を</h1>
+		<h2>MineFrontier Network / RPG</h2>
+		<h3>2020-2021 MineFrontier Network.</h3>
+	</div>
+</body>
+</html>
