@@ -58,4 +58,4 @@ def convert(name):
         mp = prs.pop(1).replace("mp: ","")
         hp = prs.pop(1).replace("health: ","")
         return template('playerpage', mcid=name, id=uuid, job=jobtext, levelweb=level, xpweb=xp, meeleweb=meele, protectionweb=protection, magicweb=magic, mpweb=mp, hpweb=hp)
-web.serve(app,host='192.168.1.16', port=5400, daemon_threads=False, threadpool_workers=25, use_threadpool=True)
+web.serve(app,host='127.0.0.1', port=5400, daemon_threads=False, threadpool_workers=25, use_threadpool=True)
